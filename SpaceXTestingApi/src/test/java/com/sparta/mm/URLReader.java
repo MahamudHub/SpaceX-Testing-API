@@ -9,7 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Map;
 
-public class JacksonURLReader {
+public class URLReader {
     ObjectMapper objectMapper = getDefaultObjectMapper();
 
     private ObjectMapper getDefaultObjectMapper() {

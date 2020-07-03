@@ -3,7 +3,7 @@ package com.sparta.mm;
 import java.util.Map;
 
 public class HeaderDTO {
-    JacksonURLReader urlReader = new JacksonURLReader();
+    URLReader urlReader = new URLReader();
     String link = "https://api.spacexdata.com/v4/launches/latest";
 
     public Map getAllHeader() {

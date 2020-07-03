@@ -7,10 +7,10 @@ import java.util.List;
 
 public class SpaceXDTO {
     private SpaceXPOJO fullSpaceX;
-    private JacksonURLReader urlReader;
+    private URLReader urlReader;
 
     public SpaceXDTO(String url) {
-        urlReader = new JacksonURLReader();
+        urlReader = new URLReader();
         fullSpaceX = urlReader.readURLAsJSON(url);
     }
 

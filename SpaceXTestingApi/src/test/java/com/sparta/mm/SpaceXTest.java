@@ -16,7 +16,7 @@ public class SpaceXTest {
 
     @Test
     void statusTest(){
-        logger.info(headerDTO.getHeaderContentType());
+        logger.info(headerDTO.getAllHeader());
         assertEquals("200",spaceXDTO.getStatus());
     }
 }
