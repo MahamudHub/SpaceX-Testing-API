@@ -1,31 +1,24 @@
-
 package com.sparta.mm;
 
-
 import com.google.gson.annotations.SerializedName;
-
 
 public class PatchPOJO {
 
     @SerializedName("large")
-    private Object mLarge;
+    private String mLarge;
     @SerializedName("small")
-    private Object mSmall;
+    private String mSmall;
 
-    public Object getLarge() {
+    public String getmLarge() {
         return mLarge;
     }
-
-    public void setLarge(Object large) {
-        mLarge = large;
+    public void setmLarge(String mLarge) {
+        this.mLarge = mLarge;
     }
-
-    public Object getSmall() {
+    public String getmSmall() {
         return mSmall;
     }
-
-    public void setSmall(Object small) {
-        mSmall = small;
+    public void setmSmall(String mSmall) {
+        this.mSmall = mSmall;
     }
-
 }

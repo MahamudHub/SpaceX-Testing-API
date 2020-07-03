@@ -6,13 +6,13 @@ import com.google.gson.annotations.SerializedName;
 public class LinksPOJO {
 
     @SerializedName("article")
-    private Object mArticle;
+    private String mArticle;
     @SerializedName("flickr")
     private FlickrPOJO mFlickr;
     @SerializedName("patch")
     private PatchPOJO mPatch;
     @SerializedName("presskit")
-    private Object mPresskit;
+    private String mPresskit;
     @SerializedName("reddit")
     private RedditPOJO mReddit;
     @SerializedName("webcast")
@@ -22,11 +22,11 @@ public class LinksPOJO {
     @SerializedName("youtube_id")
     private String mYoutubeId;
 
-    public Object getArticle() {
+    public String getArticle() {
         return mArticle;
     }
 
-    public void setArticle(Object article) {
+    public void setArticle(String article) {
         mArticle = article;
     }
 
@@ -46,11 +46,11 @@ public class LinksPOJO {
         mPatch = patch;
     }
 
-    public Object getPresskit() {
+    public String getPresskit() {
         return mPresskit;
     }
 
-    public void setPresskit(Object presskit) {
+    public void setPresskit(String presskit) {
         mPresskit = presskit;
     }
 

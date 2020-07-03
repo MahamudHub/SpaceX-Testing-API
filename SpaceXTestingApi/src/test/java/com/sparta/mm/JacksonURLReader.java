@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Map;
 
 public class JacksonURLReader {
     ObjectMapper objectMapper = getDefaultObjectMapper();
@@ -25,6 +26,34 @@ public class JacksonURLReader {
             e.printStackTrace();
         }
         return spaceXPOJO;
+    }
+
+    public Map getHeader(String path) {
+        String response = "";
+        URLConnection urlConnection = null;
+        try {
+            URL url = new URL(path);
+            urlConnection = url.openConnection();
+             urlConnection.getHeaderFields();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return urlConnection.getHeaderFields();
+
+    }
+
+    public String getHeaderSingleField(String path , String field) {
+        String response = "";
+        URLConnection urlConnection = null;
+        try {
+            URL url = new URL(path);
+            urlConnection = url.openConnection();
+            urlConnection.getHeaderFields();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return urlConnection.getHeaderField(field);
+
     }
 
     public String getStatus(String path) {

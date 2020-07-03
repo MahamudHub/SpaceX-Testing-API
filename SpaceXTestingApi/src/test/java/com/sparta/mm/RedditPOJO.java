@@ -10,9 +10,9 @@ public class RedditPOJO {
     @SerializedName("launch")
     private String mLaunch;
     @SerializedName("media")
-    private Object mMedia;
+    private String mMedia;
     @SerializedName("recovery")
-    private Object mRecovery;
+    private String mRecovery;
 
     public String getCampaign() {
         return mCampaign;
@@ -30,19 +30,19 @@ public class RedditPOJO {
         mLaunch = launch;
     }
 
-    public Object getMedia() {
+    public String getMedia() {
         return mMedia;
     }
 
-    public void setMedia(Object media) {
+    public void setMedia(String media) {
         mMedia = media;
     }
 
-    public Object getRecovery() {
+    public String getRecovery() {
         return mRecovery;
     }
 
-    public void setRecovery(Object recovery) {
+    public void setRecovery(String recovery) {
         mRecovery = recovery;
     }
 

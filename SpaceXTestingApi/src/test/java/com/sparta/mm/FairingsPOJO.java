@@ -8,19 +8,19 @@ import com.google.gson.annotations.SerializedName;
 public class FairingsPOJO {
 
     @SerializedName("recovered")
-    private Object mRecovered;
+    private Boolean mRecovered;
     @SerializedName("recovery_attempt")
     private Boolean mRecoveryAttempt;
     @SerializedName("reused")
-    private Object mReused;
+    private Boolean mReused;
     @SerializedName("ships")
     private List<Object> mShips;
 
-    public Object getRecovered() {
+    public Boolean getRecovered() {
         return mRecovered;
     }
 
-    public void setRecovered(Object recovered) {
+    public void setRecovered(Boolean recovered) {
         mRecovered = recovered;
     }
 
@@ -32,11 +32,11 @@ public class FairingsPOJO {
         mRecoveryAttempt = recoveryAttempt;
     }
 
-    public Object getReused() {
+    public Boolean getReused() {
         return mReused;
     }
 
-    public void setReused(Object reused) {
+    public void setReused(Boolean reused) {
         mReused = reused;
     }
 
