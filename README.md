@@ -6,10 +6,11 @@ There are two DTO classes one for the headers and another for the JSON API which
 
 The DTO provides you with getters you could use those getters to call it through the assertion to run the appropriate tests you require.
 
-    <Java>
+    ```java
     Logger logger = LogManager.getLogger(SpaceXTest.class);
     SpaceXDTO spaceXDTO = new SpaceXDTO("https://api.spacexdata.com/v4/launches/latest");
     HeaderDTO headerDTO = new HeaderDTO();
+    ```
 
 The spaceXDTO method you would need to pass the URL of the api to use the method
 Api link: (https://api.spacexdata.com/v4/launches/latest)
